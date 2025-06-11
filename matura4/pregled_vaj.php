@@ -142,10 +142,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['izbrisi_vajo'])) {
                     <td><?php echo htmlspecialchars($vaja['ime']); ?></td>
                     <td><?php echo $vaja['seti']; ?></td>
                     <td><?php echo $vaja['ponovitve']; ?></td>
-                    <td><?php echo number_format($vaja['kilaza'], 2); ?> kg</td>
+                    <td><?php echo number_format($vaja['kilaza'], 2); ?> </td>
                     <td><?php echo $vaja['datum']; ?></td>
                     <td>
-                        <form method="post" action="pregled_vaj.php" style="display:inline;
+                        <form method="post" action="pregled_vaj.php" style="display:inline;">
                             <input type="hidden" name="izbrisi_vajo" value="<?php echo $vaja['id']; ?>">
                             <button type="submit" class="delete-btn">x</button>
                         </form>

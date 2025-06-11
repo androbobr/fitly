@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Osnovni stil */
+body {
+    font-family: "Epilogue";
+    font-size: 16px;
+    background-color: #121417;
+    padding: 0;
+    margin: 0;
+}
+nav span{
+    font-size: 40px;
+    font-weight: 800;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+/* Header in navigacija */
+header {
+    border-bottom: 2px solid #E5E8EB;
+    color: #ffffff;
+    text-align: center;
+    height: 65px;
+    font-size: 21px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/* Navigacija */
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+.navbar div {
+    padding: 1em 2em;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Vsebina zavihkov */
+.tab-content {
+    display: none;
+    margin: 0  0 0 12.5%;
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+.tab-content.active {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+/* Obrazci */
+form {
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+form input,
+form button {
+    background-color: #292E38;
+    width: 448px;
+    height: 32px;
+    border-radius: 12px;
+    border: none;
+    margin-bottom: 30px;
+}
+form label{
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    display: block;
+}
+form input:focus,
+form button:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+form button {
+    background-color: #0D66F2;
+    color: white;
+    cursor: pointer;
+    width: 480px;
+    height: 40px;
+    font-size: 21px;
+    
+    
+}
+.shranitezo {
+    position: absolute;
+    right: 336px;
+}
+section h2{
+    font-size: 40px;
+}
+.p-teza{
+    color: #9CA6BA;
+    font-size: 21px;
+}
+.vsizatezo{
+    display: flex;
+    gap: 32px;
+}
+
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Tabele */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2em;
+    background-color: #292E38;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 1em;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+table th {
+    background-color: #0D66F2;
+    color: white;
+    text-transform: uppercase;
+}
+
+table tr:hover {
+    background-color: #f4f4f4;
+}
+
+/* Grafi */
+canvas {
+    margin-top: 2em;
+    border-radius: 8px;
+}
+
+/* Pomožni razredi za animacije */
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#weightGraph {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+}
